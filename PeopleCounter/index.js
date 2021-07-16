@@ -39,6 +39,33 @@ function incrementBtn(){
     countEl = document.getElementById("count-el")
     count = count + 1
     countEl.innerText = count
-
-    console.log(countEl)
 }
+
+function save(){
+    console.log(count)
+    record()
+}
+
+let message = "message"
+let username = "hoyeon"
+
+console.log(message+ ": " + username)
+
+let messageUser = message + " : " + username
+
+console.log(messageUser)
+
+//let WelcomeEl = document.getElementById("welcome-el")
+//let Myname = "hoyeon"
+//let greeting = "welcome back!"
+
+//WelcomeEl.innerText = Myname + " " + greeting
+//WelcomeEl.innerText = WelcomeEl.innerText
+
+function record() { 
+    let PreviousEl = document.getElementById("previous-el")
+    let CountEl = document.getElementById("count-el")
+    PreviousEl.innerText += countEl.innerText + "-"
+    CountEl.innerText = 0
+}
+
